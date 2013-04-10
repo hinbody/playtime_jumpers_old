@@ -13,6 +13,7 @@ feature 'Creating Bounce Houses' do
     fill_in 'bounce_house[all_day_rental]', :with => '140'
     click_button 'Create Bounce House'
 
-    expect(page).to have_content('Bounce House has been created.')
+    expect(page).to have_content('Your new Bounce House has been created.')
+    expect(page.current_url).to eql(bounce_houses_url)
   end
 end
