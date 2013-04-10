@@ -1,0 +1,23 @@
+<h2>New Bounce House</h2>
+<%= form_for(@bounce_house) do |f| %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+
+  <p>
+    <%= f.label :five_hour_rental %><br />
+    <%= f.text_field :five_hour_rental %>
+  </p>
+
+  <p>
+    <%= f.label :all_day_rental %><br />
+    <%= f.text_field :all_day_rental %>
+  </p>
+  <%= f.submit 'Create Bounce House' %>
+<% end %>

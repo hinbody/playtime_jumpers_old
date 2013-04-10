@@ -3,5 +3,9 @@ class BounceHousesController < ApplicationController
   end
 
   def new
+    @bounce_house = BounceHouse.new
+  end
+
+  def create
   end
 end
