@@ -1,6 +1,8 @@
 PlaytimeJumpers::Application.routes.draw do
+  root to: 'info#home'
   get "info/home"
-  get "info/contact"
+  get "contact" => 'info#contact'
+#  get "info/contact"
   resources :bounce_houses
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
