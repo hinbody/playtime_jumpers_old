@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "info/home.html.erb" do
-  it "displays the proper headings" do
+  it "displays the proper headings and contact info" do
     visit '/'
     page.should have_selector('h1', :text => 'Michiana\'s home for bounce house rentals')
     page.should have_selector('h3', :text => 'Quality, safe, and affordable fun for all')
