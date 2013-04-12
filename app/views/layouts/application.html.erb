@@ -8,6 +8,14 @@
   </head>
   <body>
 
+    <ul>
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Bounce Houses", bounce_houses_path %></li>
+      <li><%= link_to "Contact", contact_path %></li>
+      <li><%= link_to "Order", '#' %></li>
+      <li><%= link_to "FAQ", '#' %></li>
+    </ul>
+    <% #render "layouts/navigation" %>
     <% if flash[:notice] %>
       <p class="notice"><%= flash[:notice] %></p>
     <% end %>
